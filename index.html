@@ -5,9 +5,26 @@
     <title>Snake Game</title>
     <!-- P5 .js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script src="Snake.js"></script>
     <script src="index.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
   </head>
   <body>
+    <div class="game">
+      <div id="game-left"></div>
+      <div class="right-menu">
+        <div class="pause button">Pause (P)</div>
+        <div class="score">0</div>
+        <div class="restart button">Restart (R)</div>
+      </div>
+    </div>
 
+    <div class="game-over-overlay" style="display:none">
+    </div>
+    <div class="rules">
+      <p>Press P to pause. Press R to restart.</p>
+    </div>
   </body>
 </html>
