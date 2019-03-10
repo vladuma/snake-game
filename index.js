@@ -15,6 +15,8 @@ function setup() {
   s = new Snake();
   frameRate(10);
   foodLocation();
+  scoreCount = 0;
+  updateScore();
   buttons();
 }
 
@@ -91,9 +93,8 @@ function buttons(){
 }
 
 function updateScore(){
-  scoreCount++;
-
   scoreBoard[0].innerText = scoreCount;
+  scoreCount++;
 }
 
 function restart(){
